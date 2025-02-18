@@ -1,0 +1,13 @@
+#include <stdio.h>
+int main() {
+    int leap;
+     scanf("%d",&leap);
+     if(leap <= 0){
+        printf("The given year %d is Invalid year.\n",leap);
+    }else if((leap % 4 == 0) && ((leap % 100 != 0) || (leap % 400 == 0))){
+        printf("Yes, %d is a leap year.\n",leap);
+    }else{
+        printf("No, %d is not a leap year.\n",leap);
+    }
+    return 0;
+}
